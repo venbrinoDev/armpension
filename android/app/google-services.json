@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70469630020",
+    "project_id": "armpension-93bbf",
+    "storage_bucket": "armpension-93bbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70469630020:android:fbaf5f3862ba525c58a411",
+        "android_client_info": {
+          "package_name": "com.pension.armpension"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70469630020-uv7jbg68pal7qgt140cvemuoo0kt53ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeMjYBQrPhDTnnWYmeGliPzXSb24d7S6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70469630020-uv7jbg68pal7qgt140cvemuoo0kt53ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

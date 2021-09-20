@@ -1,7 +1,31 @@
+import 'package:armpension/splashScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 
-void main() {
-  runApp(MyApp());
+import 'core/util/theme_util.dart';
+
+void main()  async{
+WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp();
+
+SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]).then((_) {
+
+  runApp(
+      MultiProvider(providers: [
+        ],
+
+        child:MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme:CustomThemeData.getThemeData(),
+            home:SplashScreen()
+        ),
+      )
+
+  );
+});
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +43,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  MyHomePage({Key key, @required this.title}) : super(key: key);
 
   final String title;
 
