@@ -48,10 +48,9 @@ class AuthService {
         .collection("Users")
         .doc(uid)
         .set({
-      "name": registerRequest.name,
-      "lastName": registerRequest.lastName,
+      "surname": registerRequest.surname,
+      "firstName": registerRequest.firstname,
       "email": registerRequest.emailID,
-      "phoneNumber": registerRequest.contactNo,
     });
   }
 

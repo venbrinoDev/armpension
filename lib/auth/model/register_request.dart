@@ -1,12 +1,11 @@
 
 
 class RegisterRequest{
-  String name;
-  String lastName;
-  String contactNo;
+  String surname;
+  String firstname;
   String emailID;
   String password;
 
-  RegisterRequest({this.name, this.lastName, this.contactNo, this.emailID, this.password});
+  RegisterRequest({this.surname, this.firstname, this.emailID, this.password});
 }
 

@@ -4,9 +4,6 @@ class LoginRequest{
   String password;
   String loginType;
 
-  LoginRequest({this.email, this.password, this.loginType});
+  LoginRequest({this.email, this.password,});
 
-}
-enum LOGIN_TYPE{
-  FARMER,BUYER
 }
